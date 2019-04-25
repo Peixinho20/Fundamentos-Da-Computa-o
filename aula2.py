@@ -1,4 +1,4 @@
-#Aula3
+#Aula2 - SELECAO E REPETICAO
 
 '''
 Comando de seleção simples em python
