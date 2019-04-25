@@ -1,4 +1,4 @@
-Aula 2
+Aula 1
 
 #1) Fazer um programa que leia dois números e mosta a soma
 a = float(input('digite um número:'))
