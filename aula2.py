@@ -72,7 +72,7 @@ else:
 #Fazer um algoritimo para ler o peso de oito bolas. Assumindo que todas tem
 # o mesmo peso e apenas uma tenha peso diferente, imprimir a bola de peso
 # diferente.
-
+'''
 b1 = int(input('b1:'))
 b2 = int(input('b2:'))
 b3 = int(input('b3:'))
@@ -82,4 +82,20 @@ b6 = int(input('b6:'))
 b7 = int(input('b7:'))
 b8 = int(input('b8:'))
 (interrompido)
+'''
+b1 = int(input('b1:'))
+b2 = int(input('b2:'))
+b3 = int(input('b3:'))
+#b4 = int(input('b4:'))
+#b5 = int(input('b5:'))
+#b6 = int(input('b6:'))
+#b7 = int(input('b7:'))
+#b8 = int(input('b8:'))
 
+#FUNCIONANDO, FALTA INCLUIR AS OUTRAS BOLAS
+if b1 == b2:
+    print('b3:',b3)
+elif b1 == b3: #b1 e b3 são iguais
+    print('b2:',b2)
+else: #b2 e b3 são iguais4
+    print('b1:',b1)
