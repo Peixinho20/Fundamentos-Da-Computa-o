@@ -73,29 +73,82 @@ else:
 # o mesmo peso e apenas uma tenha peso diferente, imprimir a bola de peso
 # diferente.
 '''
+
 b1 = int(input('b1:'))
 b2 = int(input('b2:'))
 b3 = int(input('b3:'))
 b4 = int(input('b4:'))
 b5 = int(input('b5:'))
 b6 = int(input('b6:'))
-b7 = int(input('b7:'))
-b8 = int(input('b8:'))
-(interrompido)
-'''
-b1 = int(input('b1:'))
-b2 = int(input('b2:'))
-b3 = int(input('b3:'))
-#b4 = int(input('b4:'))
-#b5 = int(input('b5:'))
-#b6 = int(input('b6:'))
 #b7 = int(input('b7:'))
 #b8 = int(input('b8:'))
 
 #FUNCIONANDO, FALTA INCLUIR AS OUTRAS BOLAS
+
+#Para três bolas:
+'''
 if b1 == b2:
-    print('b3:',b3)
+    print ( ' b3: ' , b3)
 elif b1 == b3: #b1 e b3 são iguais
-    print('b2:',b2)
-else: #b2 e b3 são iguais4
+    print ( ' b2: ' , b2)
+else: #b2 e b3 são iguais
+    print ( ' b1: ' , b1)
+
+'''
+
+#Para qutro ou cinco bolas:
+'''
+if b1 == b2:# b1 e b2 são iguais
+    if b3 != b2:
+        print('b3:',b3)
+    else:# b1, b2 e b3 são iguais
+        print('b4:',b4)
+# se nenhuma das condiçoes acima forem atendidas, ele executará o bloco de baixo
+if b3 == b4:
+    if b2 != b4:
+        print('b2:',b2)
+    else:# b2 e b3 são iguais
+        print('b1:',b1)    
+else:
+    print('b5:',b5)
+# até b5 essa estrutura funciona
+'''
+
+#Para seis bolas:
+'''
+if b1 + b2 == b3 + b4:
+    if b6 != b1:  # sem essa segunda condição, ele imprimirá mais de uma resposta
+        print('b6:', b6)
+    else:
+        print('b5:', b5)
+    if b1 == b2:
+        print('b4:', b4)
+    else:
+        print('b3:', b3)
+    if b2 != b1:
+        print('b2:', b2)
+else:
     print('b1:',b1)
+'''
+
+#Para oito bolas
+#INCOMPLETO
+
+if b1 + b3 + b5 == b2 + b4 + b6:
+    if b8 != b1:
+        print('b8:', b8)
+    else:
+        print ('b7', b7)
+if b1 + b3 == b2 + b4:
+    if b6 != b1:
+        print('b6:', b6)
+    else:
+        print('b5:', b5)
+if b1 == b2:
+    print('b4:', b4)
+else:
+    print('b3:', b3)
+if b2 != b1:
+    print('b2:', b2)
+else:
+    print('b1', b1)
