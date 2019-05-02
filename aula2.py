@@ -152,3 +152,52 @@ if b2 != b1:
     print('b2:', b2)
 else:
     print('b1', b1)
+    
+    
+#While
+'''
+SINTAXE:
+while CONDIÇÃO:
+ COMANDOS
+'''
+
+'''
+Fazer um programa em PYTHON para ler o nome, sexo e duas notas dos alunos de uma turma até que seja digitado o nome FIM.
+Imprimir a média pessoal APENAS das alunas. Imprimir também a média aritmética dos homens.
+'''
+
+cont = 0
+soma = 0
+nome = raw_input('nome: ')
+while nome != 'fim':
+ sexo = str(input('sexo: '))  
+ n1 = input('n1: ')
+ n2 = input('n2: ')
+ mediaPessoal = (n1+n2)/2
+ if sexo == 'f':
+  print 'media f:', mediaPessoal
+ else:
+  cont += 1
+  soma = soma + mediaPessoal
+ nome = str(input('nome: '))
+print 'media homens: ', soma/(cont)
+
+#Faça um programa que mostre os números ENTRE 100 e 200 que divididos por 7 dão resto 4.
+
+num = 101
+while num < 200:
+ if num % 7 == 4:
+  print ' ', num
+ num += 1
+
+'''
+Comando for
+• Quando queremos percorrer os ITENS ou ELEMENTOS de uma lista OU quando sabemos a quantidade de repetições a ser executada
+podemos utilizar o for.
+SINTAXE:
+for variavel in objeto_sequencial:
+  Comando1
+  ...
+  Comando n
+'''
+
