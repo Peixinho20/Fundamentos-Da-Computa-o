@@ -200,10 +200,3 @@ for variavel in objeto_sequencial:
   ...
   Comando n
 '''
-
-
-
-
-
-
-
