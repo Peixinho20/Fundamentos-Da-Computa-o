@@ -48,8 +48,7 @@ idade >= 65 --> Senior
 idade = int(input('Digite sua idade:'))
 if idade <0:
     print('Erro', idade)
-else:
-    if idade <=3:
+elsecasa  if idade <=3:
         print('Bebe de', idade, 'anos')
     else:
         if idade <= 11:
@@ -200,3 +199,39 @@ for variavel in objeto_sequencial:
   ...
   Comando n
 '''
+
+#Faça um programa para somar os números pares entre 1000 e 2000, inclusive.
+'''
+s = 0
+for i in range(1000, 2001, 2):
+    s =+ i
+print('soma:', s)
+'''
+#Faça um programa para somar o FATORIAL dos 5 primeiros números
+'''
+soma = 0
+for i in range(1,6):
+    fat = 1
+    for j in range(1,1+i):
+        fat = fat*j
+    print('fat:', fat) # print de cada fatorial de 1 até 5
+    soma += fat
+print('soma:', soma) # soma de todos os fatoriais de 1 ate 5   
+'''
+
+'''
+Se a instrução else é usada com um loop for, a instrução else é executada
+quando o loop se esgotou iterando a lista.
+
+Se a instrução else é usada com um loop while, a instrução else é executada
+quando a condição se torna falsa.
+'''
+
+count = 0
+while count < 5:
+    print (count, 'é menor do que 5.')
+    count = count + 1
+else:
+    print('não é menor do que 5.')
+
+ #testar e slavar em casa
