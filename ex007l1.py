@@ -6,9 +6,6 @@ b = int(input('Digite outro inteiro positivo: '))
 if a > b:
     print('A soma não será realizada!')    
 else:
-    a1 = a + 1
-    b1 = b - 1
-    while a1 <= b1:
-        a1 = a1 + 1
-print('A soma dos valores entre ', a, 'e ', b, 'é ', a1, b1)        
-terminar
+    for i in range(a+1,b):
+        soma += i
+print(soma)        
