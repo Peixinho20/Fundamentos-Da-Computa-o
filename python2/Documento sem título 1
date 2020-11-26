@@ -1,0 +1,19 @@
+#Leia uma matriz 5x5 e imprima o valor do mair elemento. Imprima também a linha e coluna desse elemento. 
+
+mat=[]
+maior=-1000000
+for i in range(0,5):
+    mat.append(0)
+    mat[i]=[]
+    for j in range(0,5):
+        mat[i].append(input('Digitar Valor '))
+print mat
+for i in range(0,5):
+    for j in range(0,5):
+        if mat[i][j]>maior:
+            maior=mat[i][j]
+            linha=i
+            coluna=j
+print'Maior elemento',maior
+print'Linha do maior elemento ',linha
+print'Coluna do maior elemento ',coluna
